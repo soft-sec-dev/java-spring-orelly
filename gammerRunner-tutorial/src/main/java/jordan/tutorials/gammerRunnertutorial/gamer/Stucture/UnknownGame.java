@@ -1,7 +1,9 @@
 package jordan.tutorials.gammerRunnertutorial.gamer.Stucture;
 
 import jordan.tutorials.gammerRunnertutorial.gamer.interfaces.GammingConsole;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UnknownGame implements GammingConsole {
 
     @Override
