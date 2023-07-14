@@ -1,9 +1,11 @@
 package jordan.tutorials.gammerRunnertutorial.gamer.Stucture;
 
 import jordan.tutorials.gammerRunnertutorial.gamer.interfaces.GammingConsole;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
+@Primary
 public class MarioGame implements GammingConsole {
     public MarioGame(){}
     public void up(){

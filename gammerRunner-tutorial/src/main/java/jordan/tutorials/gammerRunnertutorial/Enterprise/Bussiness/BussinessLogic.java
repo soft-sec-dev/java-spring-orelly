@@ -1,5 +1,6 @@
-package jordan.tutorials.gammerRunnertutorial.Bussiness.example;
+package jordan.tutorials.gammerRunnertutorial.Enterprise.Bussiness;
 
+import jordan.tutorials.gammerRunnertutorial.Enterprise.Data.DataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,6 +18,11 @@ public class BussinessLogic {
         public Integer calculateSum(){
             List<Integer> data = dataService.getData();
             return data.stream().reduce(Integer::sum).get();
+        }
+
+        public String arrayJoin(){
+            List<String> arrayComming = dataService.getDataList();
+            return arrayComming.stream().reduce(String::join).get();
         }
 
 }
